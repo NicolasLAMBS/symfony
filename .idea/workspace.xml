@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40949b7a-cdbf-445e-bc78-bf4f5d35defc" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\Bundle\Symfony\DoctrineFixturesBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\data-fixtures\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\cache\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\collections\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\common\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\common\tests\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\data-fixtures\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\doctrine-fixtures-bundle\Doctrine\Bundle\FixturesBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\doctrine-migrations-bundle\Doctrine\Bundle\MigrationsBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\migrations\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\doctrine\migrations\tests\Doctrine\DBAL\Migrations\Tests\Functional\_files\migrations\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\sensio\distribution-bundle\Sensio\Bundle\DistributionBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\sensio\framework-extra-bundle\Sensio\Bundle\FrameworkExtraBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\sensiolabs\security-checker\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\DoctrineFixturesBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\Doctrine\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\Monolog\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\Propel1\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\ProxyManager\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\Swiftmailer\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bridge\Twig\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\FrameworkBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\SecurityBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\TwigBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Bundle\WebProfilerBundle\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\BrowserKit\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\ClassLoader\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Config\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Console\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\CssSelector\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Debug\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\DependencyInjection\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\DomCrawler\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\EventDispatcher\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\ExpressionLanguage\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Filesystem\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Finder\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Form\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\HttpFoundation\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\HttpKernel\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Intl\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Locale\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\OptionsResolver\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Process\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\PropertyAccess\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Routing\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Security\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Security\Acl\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Security\Core\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Security\Csrf\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Security\Http\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Serializer\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Stopwatch\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Templating\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Translation\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Validator\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\VarDumper\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\symfony\symfony\src\Symfony\Component\Yaml\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\twig\twig\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\vendor\twig\twig\ext\twig\.gitignore" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="symfony.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -810,7 +747,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="959" height="1040" extended-state="1" />
+    <frame x="960" y="0" width="959" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
