@@ -11,7 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class BlogController extends Controller
 {
     /**
-     * Show a blog entry
+     * @Route("/{id}", name="blog_Blog_show")
      */
     public function showAction($id)
     {

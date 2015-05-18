@@ -5,11 +5,17 @@ namespace Blogger\BlogBundle\Controller;
 
 use Blogger\BlogBundle\Entity\Enquiry;
 use Blogger\BlogBundle\Form\EnquiryType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class PageController extends Controller
 {
+    /**
+     * @Route("/", name="blog_page_index")
+     * @Method({"GET", "POST"})
+     */
     public function indexAction()
     {
         $em = $this->getDoctrine()
@@ -23,12 +29,19 @@ class PageController extends Controller
         ));
     }
 
-
+    /**
+     * @Route("/about", name="blog_page_about")
+     * @Method({"GET", "POST"})
+     */
     public function aboutAction()
     {
         return $this->render('BloggerBlogBundle:Page:about.html.twig');
     }
 
+    /**
+     * @Route("/contact", name="blog_page_contact")
+     * @Method({"GET", "POST"})
+     */
     public function contactAction()
     {
         $enquiry = new Enquiry();
