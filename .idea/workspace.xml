@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40949b7a-cdbf-445e-bc78-bf4f5d35defc" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\BloggerBlogBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Controller\BlogController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Controller\CommentController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Controller\PageController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\DataFixtures\ORM\BlogFixtures.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\DataFixtures\ORM\CommentFixtures.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\DependencyInjection\BloggerBlogExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\DependencyInjection\Configuration.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Entity\Blog.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Entity\Comment.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Entity\Enquiry.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Form\CommentType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Form\EnquiryType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Repository\BlogRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Repository\CommentRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\config\config.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\config\routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\config\services.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\public\css\blog.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\public\css\sidebar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\public\images\beach.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\public\images\beach.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Blog\show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Comment\create.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Comment\form.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Comment\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Page\about.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Page\contact.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Page\contactEmail.txt.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Page\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\Page\sidebar.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Resources\views\layout.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony\src\Blogger\BlogBundle\Tests\Controller\DefaultControllerTest.php" afterPath="" />
-    </list>
+    <list default="true" id="40949b7a-cdbf-445e-bc78-bf4f5d35defc" name="Default" comment="" />
     <ignored path="symfony.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
