@@ -1,12 +1,12 @@
 <?php
-// src/Blogger/BlogBundle/DataFixtures/ORM/BlogFixtures.php
+// src/AppBundle/DataFixtures/ORM/BlogFixtures.php
 
 namespace Blogger\BlogBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\FixtureInterface;
-use Blogger\BlogBundle\Entity\Blog;
+use AppBundle\Entity\Blog;
 
 class BlogFixtures extends AbstractFixture implements FixtureInterface
 {

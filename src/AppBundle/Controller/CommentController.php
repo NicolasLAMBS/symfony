@@ -1,11 +1,11 @@
 <?php
-// src/Blogger/BlogBundle/Controller/CommentController.php
+// src/AppBundle/Controller/CommentController.php
 
-namespace Blogger\BlogBundle\Controller;
+namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Blogger\BlogBundle\Entity\Comment;
-use Blogger\BlogBundle\Form\CommentType;
+use AppBundle\Entity\Comment;
+use AppBundle\Form\CommentType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
@@ -22,7 +22,7 @@ class CommentController extends Controller
         $comment->setBlog($blog);
         $form   = $this->createForm(new CommentType(), $comment);
 
-        return $this->render('BloggerBlogBundle:Comment:form.html.twig', array(
+        return $this->render('AppBundle:Comment:form.html.twig', array(
             'comment' => $comment,
             'form'   => $form->createView()
         ));
@@ -30,7 +30,7 @@ class CommentController extends Controller
 
 
     /**
-     * @Route("/comment/{blog_id}", name="blog_comment_create")
+     * @Route("/comment/{blog_id}", name="App_comment_create")
      * @Method({"GET", "POST"})
      */
     public function createAction($blog_id)
@@ -49,13 +49,13 @@ class CommentController extends Controller
             $em->persist($comment);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('BloggerBlogBundle_blog_show', array(
+            return $this->redirect($this->generateUrl('AppBundle_blog_show', array(
                     'id' => $comment->getBlog()->getId())) .
                 '#comment-' . $comment->getId()
             );
         }
 
-        return $this->render('BloggerBlogBundle:Comment:create.html.twig', array(
+        return $this->render('AppBundle:Comment:create.html.twig', array(
             'comment' => $comment,
             'form'    => $form->createView()
         ));
@@ -66,7 +66,7 @@ class CommentController extends Controller
         $em = $this->getDoctrine()
             ->getEntityManager();
 
-        $blog = $em->getRepository('BloggerBlogBundle:Blog')->find($blog_id);
+        $blog = $em->getRepository('AppBundle:Blog')->find($blog_id);
 
         if (!$blog) {
             throw $this->createNotFoundException('Unable to find Blog post.');

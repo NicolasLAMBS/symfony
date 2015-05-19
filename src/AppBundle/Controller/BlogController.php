@@ -1,9 +1,11 @@
 <?php
-// src/Blogger/BlogBundle/Controller/BlogController.php
+// src/AppBundle/Controller/BlogController.php
 
-namespace Blogger\BlogBundle\Controller;
+namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 
 /**
  * Blog controller.
@@ -11,22 +13,22 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class BlogController extends Controller
 {
     /**
-     * @Route("/{id}", name="blog_Blog_show")
+     * @Route("/{id}", name="app_blog_show")
      */
     public function showAction($id)
     {
         $em = $this->getDoctrine()->getEntityManager();
 
-        $blog = $em->getRepository('BloggerBlogBundle:Blog')->find($id);
+        $blog = $em->getRepository('AppBundle:Blog')->find($id);
 
         if (!$blog) {
             throw $this->createNotFoundException('Unable to find Blog post.');
         }
 
-        $comments = $em->getRepository('BloggerBlogBundle:Comment')
+        $comments = $em->getRepository('AppBundle:Comment')
             ->getCommentsForBlog($blog->getId());
 
-        return $this->render('BloggerBlogBundle:Blog:show.html.twig', array(
+        return $this->render('AppBundle:Blog:show.html.twig', array(
             'blog' => $blog,
             'comments' => $comments
         ));

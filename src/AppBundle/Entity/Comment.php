@@ -1,14 +1,14 @@
 <?php
-// src/Blogger/BlogBundle/Entity/Comment.php
+// src/AppBundle/Entity/Comment.php
 
-namespace Blogger\BlogBundle\Entity;
+namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
 /**
- * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Repository\CommentRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CommentRepository")
  * @ORM\Table(name="comment")
  * @ORM\HasLifecycleCallbacks()
  */

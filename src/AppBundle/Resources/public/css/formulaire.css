@@ -18,7 +18,7 @@ form.blogger ul li { color: #ff0000; margin-bottom: 5px; }
 .blog .meta p { margin-bottom: 5px; line-height: 1.2em; }
 .blog img.large { width: 300px; min-height: 165px; }
 
-/** src/Blogger/BlogBundle/Resources/public/css/blog.css **/
+/** src/Blogger/BlogBundle/Resources/public/css/formulaire.css **/
 .comments { clear: both; }
 .comments .odd { background: #eee; }
 .comments .comment { padding: 20px; }

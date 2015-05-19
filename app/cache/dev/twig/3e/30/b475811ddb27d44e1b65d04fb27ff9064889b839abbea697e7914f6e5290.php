@@ -8,7 +8,7 @@ class __TwigTemplate_3e30b475811ddb27d44e1b65d04fb27ff9064889b839abbea697e7914f6
         parent::__construct($env);
 
         // line 3
-        $this->parent = $this->loadTemplate("::base.html.twig", "BloggerBlogBundle::layout.html.twig", 3);
+        $this->parent = $this->loadTemplate("::base.html.twig", "AppBundle::layout.html.twig", 3);
         $this->blocks = array(
             'stylesheets' => array($this, 'block_stylesheets'),
             'sidebar' => array($this, 'block_sidebar'),
@@ -34,11 +34,11 @@ class __TwigTemplate_3e30b475811ddb27d44e1b65d04fb27ff9064889b839abbea697e7914f6
         echo "
     <link href=\"";
         // line 7
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/bloggerblog/css/blog.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/AppBundle/css/formulaire.css"), "html", null, true);
         echo "\" type=\"text/css\" rel=\"stylesheet\" />
     <link href=\"";
         // line 8
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/bloggerblog/css/sidebar.css"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/AppBundle/css/sidebar.css"), "html", null, true);
         echo "\" type=\"text/css\" rel=\"stylesheet\" />
 ";
     }

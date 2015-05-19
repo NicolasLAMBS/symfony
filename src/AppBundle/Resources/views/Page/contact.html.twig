@@ -1,5 +1,5 @@
-{# src/Blogger/BlogBundle/Resources/views/Page/contact.html.twig #}
-{% extends 'BloggerBlogBundle::layout.html.twig' %}
+{# src/AppBundle/Resources/views/Page/contact.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
 
 {% block title %}Contact{% endblock%}
 
@@ -20,7 +20,7 @@
 
     <p>Want to contact symblog?</p>
 
-    <form action="{{ path('BloggerBlogBundle_contact') }}" method="post" {{ form_enctype(form) }} class="blogger">
+    <form action="{{ path('AppBundle_contact') }}" method="post" {{ form_enctype(form) }} class="blogger">
         {{ form_errors(form) }}
 
         {{ form_row(form.name) }}

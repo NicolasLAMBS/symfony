@@ -1,13 +1,13 @@
 <?php
-// src/Blogger/BlogBundle/Entity/Blog.php
+// src/AppBundle/Entity/Blog.php
 
-namespace Blogger\BlogBundle\Entity;
+namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
 /**
- * @ORM\Entity(repositoryClass="Blogger\BlogBundle\Repository\BlogRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\BlogRepository")
  * @ORM\Table(name="blog")
  * @ORM\HasLifecycleCallbacks()
  */
@@ -258,7 +258,7 @@ class Blog
      * @param \Blogger\BlogBundle\Entity\Comment $comments
      * @return Blog
      */
-    public function addComment(\Blogger\BlogBundle\Entity\Comment $comments)
+    public function addComment(\AppBundle\Entity\Comment $comments)
     {
         $this->comments[] = $comments;
 
@@ -270,7 +270,7 @@ class Blog
      *
      * @param \Blogger\BlogBundle\Entity\Comment $comments
      */
-    public function removeComment(\Blogger\BlogBundle\Entity\Comment $comments)
+    public function removeComment(\AppBundle\Entity\Comment $comments)
     {
         $this->comments->removeElement($comments);
     }

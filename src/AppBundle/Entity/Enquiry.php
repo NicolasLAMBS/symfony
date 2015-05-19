@@ -1,7 +1,7 @@
 <?php
-// src/Blogger/BlogBundle/Entity/Enquiry.php
+// src/AppBundle/Entity/Enquiry.php
 
-namespace Blogger\BlogBundle\Entity;
+namespace AppBundle\Entity;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Constraints\NotBlank;

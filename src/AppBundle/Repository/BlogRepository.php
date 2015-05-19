@@ -1,7 +1,7 @@
 <?php
-// src/Blogger/BlogBundle/Repository/BlogRepository.php
+// src/AppBundle/Repository/BlogRepository.php
 
-namespace Blogger\BlogBundle\Repository;
+namespace AppBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 

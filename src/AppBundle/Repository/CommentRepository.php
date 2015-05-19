@@ -1,7 +1,7 @@
 <?php
-// src/Blogger/BlogBundle/Repository/CommentRepository.php
+// src/AppBundle/Repository/CommentRepository.php
 
-namespace Blogger\BlogBundle\Repository;
+namespace AppBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
@@ -25,6 +25,19 @@ class CommentRepository extends EntityRepository
             $qb->andWhere('c.approved = :approved')
                 ->setParameter('approved', $approved);
         }
+        return $qb->getQuery()
+            ->getResult();
+    }
+
+    public function getLatestComments($limit = 10)
+    {
+        $qb = $this->createQueryBuilder('c')
+            ->select('c')
+            ->addOrderBy('c.id', 'DESC');
+
+        if (false === is_null($limit))
+            $qb->setMaxResults($limit);
+
         return $qb->getQuery()
             ->getResult();
     }

@@ -1,4 +1,6 @@
-# src/Blogger/BlogBundle/Resources/config/config.yml
+# src/AppBundle/Resources/config/config.yml
 parameters:
     # Blogger contact email address
-    blogger_blog.emails.contact_email: contact@email.com
+    AppBundle.emails.contact_email: contact@email.com
+    # Blogger max latest comments
+    AppBundle.comments.latest_comment_limit: 10

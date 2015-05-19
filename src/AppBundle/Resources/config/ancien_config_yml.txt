@@ -34,3 +34,37 @@
 #     requirements:
 #         _method:  POST
 #         blog_id: \d+
+
+
+
+
+### test annotation ###
+
+ # src/AppBundle/Resources/config/routing.yml
+ AppBundle_homepage:
+     resource : "@AppBundle/Controller"
+     type : annotation
+
+# src/AppBundle/Resources/config/routing.yml
+AppBundle_about:
+    resource : "@AppBundle/Controller"
+    prefix:  /about
+    type : annotation
+
+# src/AppBundle/Resources/config/routing.yml
+AppBundle_contact:
+    resource : "@AppBundle/Controller"
+    prefix:  /contact
+    type : annotation
+
+# src/AppBundle/Resources/config/routing.yml
+AppBundle_blog_show:
+    resource : "@AppBundle/Controller"
+    prefix :  /{id}
+    type : annotation
+
+# src/AppBundle/Resources/config/routing.yml
+AppBundle_comment_create:
+    resource : "@AppBundle/Controller"
+    prefix:  /comment/{blog_id}
+    type : annotation

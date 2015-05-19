@@ -127,68 +127,71 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // BloggerBlogBundle_homepage
-        if (rtrim($pathinfo, '/') === '') {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not_BloggerBlogBundle_homepage;
-            }
-
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'BloggerBlogBundle_homepage');
-            }
-
-            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\PageController::indexAction',  '_route' => 'BloggerBlogBundle_homepage',);
+        // app_blog_show
+        if (preg_match('#^/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_blog_show')), array (  '_controller' => 'AppBundle\\Controller\\BlogController::showAction',));
         }
-        not_BloggerBlogBundle_homepage:
 
-        // BloggerBlogBundle_about
-        if ($pathinfo === '/about') {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not_BloggerBlogBundle_about;
-            }
-
-            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\PageController::aboutAction',  '_route' => 'BloggerBlogBundle_about',);
-        }
-        not_BloggerBlogBundle_about:
-
-        // BloggerBlogBundle_contact
-        if ($pathinfo === '/contact') {
+        // App_comment_create
+        if (0 === strpos($pathinfo, '/comment') && preg_match('#^/comment/(?P<blog_id>[^/]++)$#s', $pathinfo, $matches)) {
             if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
                 $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
-                goto not_BloggerBlogBundle_contact;
+                goto not_App_comment_create;
             }
 
-            return array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\PageController::contactAction',  '_route' => 'BloggerBlogBundle_contact',);
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'App_comment_create')), array (  '_controller' => 'AppBundle\\Controller\\CommentController::createAction',));
         }
-        not_BloggerBlogBundle_contact:
-
-        // BloggerBlogBundle_blog_show
-        if (preg_match('#^/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
-            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
-                $allow = array_merge($allow, array('GET', 'HEAD'));
-                goto not_BloggerBlogBundle_blog_show;
-            }
-
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'BloggerBlogBundle_blog_show')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\BlogController::showAction',));
-        }
-        not_BloggerBlogBundle_blog_show:
-
-        // BloggerBlogBundle_comment_create
-        if (0 === strpos($pathinfo, '/comment') && preg_match('#^/comment/(?P<blog_id>\\d+)$#s', $pathinfo, $matches)) {
-            if ($this->context->getMethod() != 'POST') {
-                $allow[] = 'POST';
-                goto not_BloggerBlogBundle_comment_create;
-            }
-
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'BloggerBlogBundle_comment_create')), array (  '_controller' => 'Blogger\\BlogBundle\\Controller\\CommentController::createAction',));
-        }
-        not_BloggerBlogBundle_comment_create:
+        not_App_comment_create:
 
         // homepage
         if ($pathinfo === '/app/example') {
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+        }
+
+        // app_page_index
+        if (rtrim($pathinfo, '/') === '') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_app_page_index;
+            }
+
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'app_page_index');
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\PageController::indexAction',  '_route' => 'app_page_index',);
+        }
+        not_app_page_index:
+
+        // app_page_about
+        if ($pathinfo === '/about') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_app_page_about;
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\PageController::aboutAction',  '_route' => 'app_page_about',);
+        }
+        not_app_page_about:
+
+        // app_page_contact
+        if ($pathinfo === '/contact') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_app_page_contact;
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\PageController::contactAction',  '_route' => 'app_page_contact',);
+        }
+        not_app_page_contact:
+
+        // app_page_sidebar
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'app_page_sidebar');
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\PageController::sidebarAction',  '_route' => 'app_page_sidebar',);
         }
 
         // _welcome
